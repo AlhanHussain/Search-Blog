@@ -11,7 +11,7 @@ const [dummyData, setDummyData] = useState([])
 
 
     const getData = async()=>{
-      const response =await  axios.get('http://localhost:5000/api/get-data')
+      const response =await  axios.get('https://search-blog-backend.onrender.com/api/get-data')
        if(response.data.data){
         setDummyData(response.data.data)
        }
